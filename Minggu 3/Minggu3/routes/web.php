@@ -19,6 +19,8 @@ use App\Http\Controllers\ManagementUserController;
 // });
 
 // Route::get('/user', 'ManagementUserController@index');
+
+//Untuk penamaan url 
 Route::get('/user', [ManagementUserController::class, 'index']);
 Route::get('/', function () {
     $nama = "David Arrozaqi";
