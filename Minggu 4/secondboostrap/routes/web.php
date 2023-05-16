@@ -23,6 +23,13 @@ Route::get('/home', [HomeController::class, 'index']);
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
 
+Route::group(['namespace'=>'Backend'], function()
+{
+    Route::resource('dashboard','DashboardController');
+    Route::resource('pendidikan', 'PendidikanController');
+    Route::resource('pengalaman_kerja', 'PengalamanKerjaController');
+});
+
 // Route::group(['namespace' => 'frontend'], function () {
 //     Route::resource('home', 'HomeController');
 // });

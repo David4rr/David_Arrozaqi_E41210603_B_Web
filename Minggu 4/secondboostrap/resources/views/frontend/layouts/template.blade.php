@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+  // Tambahkan {{asset}} untuk mengarahkan folder ke file project kita
+  // Perubahan yang diwajibkan jpg,png,svg,ico,dll,CSS,JavaScript
   //! bagian ini bisa dirubah
   <title>{{config('app.name')}}</title>
   <meta content="" name="description">
