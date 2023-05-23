@@ -15,6 +15,8 @@ class ConfirmablePasswordController extends Controller
     /**
      * Show the confirm password view.
      */
+
+     //  mengembalikan tampilan (view) untuk halaman konfirmasi kata sandi. 
     public function show(): View
     {
         return view('auth.confirm-password');
@@ -23,6 +25,7 @@ class ConfirmablePasswordController extends Controller
     /**
      * Confirm the user's password.
      */
+    // digunakan untuk memproses permintaan konfirmasi kata sandi.
     public function store(Request $request): RedirectResponse
     {
         if (! Auth::guard('web')->validate([

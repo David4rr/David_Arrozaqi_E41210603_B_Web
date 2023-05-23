@@ -1,3 +1,4 @@
+{{-- Tampilan ini digunakan untuk menampilkan halaman Riwayat Hidup  --}}
 @extends('backend/layouts.template')
 
 @section('content')

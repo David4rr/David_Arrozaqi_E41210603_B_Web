@@ -15,6 +15,7 @@ class AuthenticatedSessionController extends Controller
     /**
      * Display the login view.
      */
+    // untuk menampilkan halaman login kepada pengguna.
     public function create(): View
     {
         return view('auth.login');
@@ -23,6 +24,8 @@ class AuthenticatedSessionController extends Controller
     /**
      * Handle an incoming authentication request.
      */
+
+    // digunakan untuk memproses permintaan login pengguna.
     public function store(LoginRequest $request): RedirectResponse
     {
         $request->authenticate();
@@ -35,6 +38,8 @@ class AuthenticatedSessionController extends Controller
     /**
      * Destroy an authenticated session.
      */
+
+     // digunakan untuk memproses permintaan logout pengguna. 
     public function destroy(Request $request): RedirectResponse
     {
         Auth::guard('web')->logout();

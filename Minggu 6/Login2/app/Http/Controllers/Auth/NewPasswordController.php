@@ -17,6 +17,7 @@ class NewPasswordController extends Controller
     /**
      * Display the password reset view.
      */
+    // mengembalikan tampilan (view) untuk halaman reset kata sandi.
     public function create(Request $request): View
     {
         return view('auth.reset-password', ['request' => $request]);

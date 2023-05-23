@@ -13,6 +13,7 @@ class PasswordController extends Controller
     /**
      * Update the user's password.
      */
+    // digunakan untuk memproses permintaan pembaruan kata sandi pengguna.
     public function update(Request $request): RedirectResponse
     {
         $validated = $request->validateWithBag('updatePassword', [

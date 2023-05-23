@@ -18,6 +18,7 @@ class RegisteredUserController extends Controller
     /**
      * Display the registration view.
      */
+    // mengembalikan tampilan (view) untuk halaman registrasi pengguna
     public function create(): View
     {
         return view('auth.register');
@@ -28,6 +29,7 @@ class RegisteredUserController extends Controller
      *
      * @throws \Illuminate\Validation\ValidationException
      */
+    // digunakan untuk memproses permintaan registrasi pengguna
     public function store(Request $request): RedirectResponse
     {
         $request->validate([

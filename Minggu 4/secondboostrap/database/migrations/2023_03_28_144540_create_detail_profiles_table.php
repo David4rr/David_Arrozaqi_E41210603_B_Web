@@ -11,6 +11,7 @@ return new class extends Migration
      *
      * @return void
      */
+    // digunakan untuk membuat tabel baru dalam database dengan nama 'detail_profiles' dan mendefinisikan struktur kolom-kolom yang ada dalam tabel tersebut.
     public function up()
     {
         Schema::create('detail_profiles', function (Blueprint $table) {

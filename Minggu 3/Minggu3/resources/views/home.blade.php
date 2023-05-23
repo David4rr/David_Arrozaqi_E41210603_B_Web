@@ -16,10 +16,10 @@
 </body>
 </html> --}}
 
-//Extends menghubungkan view ke view master
+{{-- Extends menghubungkan view ke view master --}}
 @extends('layouts.app')
 
-//Section mendefinisikan sebuah bagian (section) dari isi halaman web
+{{-- Section mendefinisikan sebuah bagian (section) dari isi halaman web --}}
 @section('content')
 <div class="jumbotron jumbotron-fluid">
     <div class="container">

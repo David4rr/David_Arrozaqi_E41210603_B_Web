@@ -19,8 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Rute ini mengatur bahwa saat pengguna mengakses URL /home menggunakan metode HTTP GET, fungsi index() yang terdapat dalam kelas HomeController akan dijalankan.
 Route::get('/home', [HomeController::class, 'index']);
 
+// Rute ini menggunakan metode HTTP GET dan diarahkan ke fungsi index() yang ada dalam kelas DashboardController.
 Route::get('/dashboard', [DashboardController::class, 'index']);
 
 Route::group(['namespace'=>'Backend'], function()
@@ -29,7 +31,6 @@ Route::group(['namespace'=>'Backend'], function()
     Route::resource('pendidikan', 'PendidikanController');
     Route::resource('pengalaman_kerja', 'PengalamanKerjaController');
 });
-
-// Route::group(['namespace' => 'frontend'], function () {
-//     Route::resource('home', 'HomeController');
-// });
+// /dashboard - Rute ini akan diarahkan ke fungsi-fungsi yang ada dalam kelas DashboardController di dalam namespace 'Backend'.
+// /pendidikan - Rute ini akan diarahkan ke fungsi-fungsi yang ada dalam kelas PendidikanController di dalam namespace 'Backend'. 
+// /pengalaman_kerja - Rute ini akan diarahkan ke fungsi-fungsi yang ada dalam kelas PengalamanKerjaController di dalam namespace 'Backend'.

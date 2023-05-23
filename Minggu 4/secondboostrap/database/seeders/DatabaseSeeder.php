@@ -15,12 +15,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        // pemanggilan metode create() pada model detail_profile dengan memberikan nilai atribut untuk membuat entitas baru dalam database.
         detail_profile::create([
             'address' => 'Jember',
             'nomor_tlp' => '081455165124',

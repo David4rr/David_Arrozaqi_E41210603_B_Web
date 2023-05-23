@@ -14,12 +14,6 @@ use App\Http\Controllers\ManagementUserController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-// Route::get('/user', 'ManagementUserController@index');
-
 //Untuk penamaan url 
 Route::get('/user', [ManagementUserController::class, 'index']);
 Route::get('/', function () {
@@ -28,6 +22,4 @@ Route::get('/', function () {
     return view('home', compact('nama', 'pelajaran'));
 });
 
-// Route::get("/home", function () {
-//     return view("home");
-// });
+

@@ -9,7 +9,7 @@
 <body>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            // Yield digunakan untuk menampilkanisi dari bagian content
+            {{-- Yield digunakan untuk menampilkanisi dari bagian content --}}
             @yield('content')
         </div>
     </div>

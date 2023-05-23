@@ -13,6 +13,8 @@ class EmailVerificationPromptController extends Controller
     /**
      * Display the email verification prompt.
      */
+
+     // digunakan untuk memproses permintaan verifikasi email pengguna.
     public function __invoke(Request $request): RedirectResponse|View
     {
         return $request->user()->hasVerifiedEmail()
